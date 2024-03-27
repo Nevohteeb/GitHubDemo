@@ -1,0 +1,7 @@
+# credentials.env - ignore the credential file
+
+# Ignore all files of a file extension
+*.env
+
+# ignore a folder
+/junk

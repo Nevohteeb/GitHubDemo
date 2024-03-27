@@ -1,0 +1,60 @@
+
+
+.container-fluid{
+    height: 100vh;
+    background-color: #1f1f1f;
+    margin: 0 !important;
+}
+
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.btn-primary {
+    background-color: blueviolet;
+    border: none;
+}
+
+.card {
+    border-radius: 0px !important;
+    border: 10px solid transparent;
+    /* for parallax */
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation-name: gradient;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes gradient {
+    0% {
+        border-image: linear-gradient(0deg, #020024, #00d4ff);
+        border-image-slice: 1;
+    }
+    25% {
+        border-image: linear-gradient(90deg, #020024, #00d4ff);
+        border-image-slice: 1;
+    }
+    50% {
+        border-image: linear-gradient(180deg, #020024, #00d4ff);
+        border-image-slice: 1;
+    }
+    75% {
+        border-image: linear-gradient(270deg, #020024, #00d4ff);
+        border-image-slice: 1;
+    }
+    100% {
+        border-image: linear-gradient(0deg, #020024, #00d4ff);
+        border-image-slice: 1;
+    }
+}
+
+.card-body {
+    transform: translateZ(30px);
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
